@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,13 +29,23 @@ use App\Http\Controllers\ProductController;
 //     Artisan::call('clear');
 // });
 
-// Route::get('down', function () {
-//     Artisan::call('down');
+
+    // how to down and up webistes start 
+
+        // Route::get('down', function () {
+        //     Artisan::call('down');
+        // }); 
+
+        // now remove or delete down file in storage/framworks/down.txt
+    // how to down and up webistes end 
+
+
+// Route::get('/down', function () {
+//     Artisan::call('down',['--secret'=>'630542a-246b']);
+//     return "Website Down successfully";
 // });
 
-// Route::get('up', function () {
-//     Artisan::call('up');
-// });
+
 
 
 Route::resource('products', ProductController::class);

@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('ui/style.css') }}">
 </head>
-
-<body>
-    <nav>
-        @include('elements.frontend_header')
-    </nav>
-    <div class="container">
-        @yield('content')
-    </div>
-</body>
+    <body>
+        <nav>
+            @include('elements.frontend_header')
+        </nav>
+        <div class="container">
+            @yield('content')
+        </div>
+    </body>
 </html>
